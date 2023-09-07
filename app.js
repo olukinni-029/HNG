@@ -28,8 +28,8 @@ app.get('/api',(req,res)=>{
     current_day: currentDay,
     utc_time: utcTime,
     track: track,
-    github_file_url: 'https://github.com/username/repo/blob/main/file_name.ext', 
-    github_repo_url: 'https://github.com/username/repo', 
+    github_file_url: 'https://github.com/olukinni-029/HNG/blob/main/app.js', 
+    github_repo_url: 'https://github.com/olukinni-029/HNG', 
     status_code: 200,
   };
 
