@@ -21,7 +21,7 @@ app.get('/api',(req,res)=>{
   const currentDay = daysOfWeek[new Date().getDay()];
 
   const now = new Date();
-  const utcTime = new Date(now.getTime() + (now.getTimezoneOffset() - 120) * 60000).toISOString();
+  const utcTime = now.toISOString().replace(/\.\d+Z$/, 'Z');
 
   const jsonResponse = {
     slack_name: slackName,
